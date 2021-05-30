@@ -1,10 +1,10 @@
 {
   "schemaVersion": 1,
-  "id": "testing",
+  "id": "mangetoutmod",
   "version": "${1.0}",
 
-  "name": "test Mod",
-  "description": "Literally Testing innit",
+  "name": "Mangetout Mania",
+  "description": "Adds all things Mangetout!",
   "authors": [
     "JellyTumTum"
   ],
@@ -14,12 +14,12 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/testing/icon.png",
+  "icon": "assets/mangetoutmod/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
-      "com.jellytumtum.test.Test"
+      "com.jellytumtum.mangetoutmod.MangetoutMania"
     ]
   },
   "mixins": [

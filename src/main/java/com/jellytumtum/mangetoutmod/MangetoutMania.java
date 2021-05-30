@@ -1,16 +1,16 @@
-package com.jellytumtum.test;
+package com.jellytumtum.mangetoutmod;
 
-import com.jellytumtum.test.registry.ModBlocks;
-import com.jellytumtum.test.registry.ModItems;
+import com.jellytumtum.mangetoutmod.registry.ModBlocks;
+import com.jellytumtum.mangetoutmod.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.Identifier;
 
-public class Test implements ModInitializer {
+public class MangetoutMania implements ModInitializer {
 
-    public static final String MOD_ID = "testing";
+    public static final String MOD_ID = "mangetoutmod";
 
     // public static final ItemGroup ITEM_GROUP = FabricItemGroupBuilder.build(
     //     new Identifier(MOD_ID, "general"),
