@@ -1,16 +1,14 @@
-package com.jellytumtum.test.registry;
+package com.jellytumtum.mangetoutmod.registry;
 
+import com.jellytumtum.mangetoutmod.MangetoutMania;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
-
-import com.jellytumtum.test.Test;
-
-import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 
 public class ModBlocks {
     
@@ -25,6 +23,6 @@ public class ModBlocks {
     .sounds(BlockSoundGroup.WART_BLOCK));
 
     public static void registerBlocks() {
-        Registry.register(Registry.BLOCK, new Identifier(Test.MOD_ID, "condensed_mangetout"), CONDENSED_MANGETOUT);
+        Registry.register(Registry.BLOCK, new Identifier(MangetoutMania.MOD_ID, "condensed_mangetout"), CONDENSED_MANGETOUT);
     }
 }

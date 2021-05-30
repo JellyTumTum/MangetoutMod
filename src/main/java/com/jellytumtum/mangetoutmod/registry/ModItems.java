@@ -1,6 +1,6 @@
-package com.jellytumtum.test.registry;
+package com.jellytumtum.mangetoutmod.registry;
 
-import com.jellytumtum.test.Test;
+import com.jellytumtum.mangetoutmod.MangetoutMania;
 
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -17,7 +17,7 @@ public class ModItems {
     public static final BlockItem CONDENSED_MANGETOUT = new BlockItem(ModBlocks.CONDENSED_MANGETOUT, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
 
     public static void registerItems() {
-        Registry.register(Registry.ITEM, new Identifier(Test.MOD_ID, "mangetout"), MANGETOUT);
-        Registry.register(Registry.ITEM, new Identifier(Test.MOD_ID, "condensed_mangetout"), CONDENSED_MANGETOUT);
+        Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetout"), MANGETOUT);
+        Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "condensed_mangetout"), CONDENSED_MANGETOUT);
     }
 }
