@@ -19,11 +19,10 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "com.jellytumtum.test.Test"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
   ],
 
   "depends": {
