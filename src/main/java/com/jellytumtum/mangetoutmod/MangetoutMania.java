@@ -64,8 +64,8 @@ public class MangetoutMania implements ModInitializer {
         // injecting additional entries into loot tables. 
         private static final Identifier ZOMBIE_LOOT_TABLE_ID = new Identifier("minecraft", "entities/zombie");
 
-        private static ConfiguredFeature<?, ?> MANGETOUTIUM_ORE_OVERWORLD = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.MANGETOUTIUM_ORE.getDefaultState(), 25)) // last int value = max number in 1 vein.
-        .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 240))).spreadHorizontally().repeat(20);
+        private static ConfiguredFeature<?, ?> MANGETOUTIUM_ORE_OVERWORLD = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.MANGETOUTIUM_ORE.getDefaultState(), 4)) // last int value = max number in 1 vein.
+        .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 25))).spreadHorizontally().repeat(2);
         // RangeDecoratorConfig(0, minYValue, maxYValue)
         // .repeat(veinsPerChunk)
 
