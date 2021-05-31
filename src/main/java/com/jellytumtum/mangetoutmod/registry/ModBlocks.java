@@ -22,7 +22,7 @@ public class ModBlocks {
     .strength(1.5f, 2f)
     .sounds(BlockSoundGroup.WART_BLOCK));
 
-    public static final Block MANGETOUTIUM_ORE = new Block(FabricBlockSettings
+    public static final Block MANGETOUTIUM_ORE = new MangetoutiumOreBlock(FabricBlockSettings
     .of(Material.STONE, MaterialColor.STONE)
     .breakByTool(FabricToolTags.PICKAXES, 2)
     .breakByHand(false)

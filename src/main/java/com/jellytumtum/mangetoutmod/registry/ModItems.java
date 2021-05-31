@@ -15,10 +15,10 @@ public class ModItems {
     public static final Item MANGETOUT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder()
         .hunger(4)
         .saturationModifier(2f)
-        .snack()
         .build()));  // DOES NOT NEED TO BE INDENTED JUST CLEAR THAT ITS PART OF FOOD COMPONENT BUILDER
     public static final Item CRISP_MANGETOUT = new Item(new Item.Settings().group(ItemGroup.FOOD).food(new FoodComponent.Builder()
-        .hunger(2)
+        .hunger(3)
+        .saturationModifier(1f)
         .snack()
         .build()));
         
