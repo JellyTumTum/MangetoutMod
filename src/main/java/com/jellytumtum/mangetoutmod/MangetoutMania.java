@@ -3,7 +3,6 @@ package com.jellytumtum.mangetoutmod;
 import com.jellytumtum.mangetoutmod.registry.ModBlocks;
 import com.jellytumtum.mangetoutmod.registry.ModItems;
 
-import jdk.nashorn.api.tree.IdentifierTree;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
@@ -23,12 +22,12 @@ import net.minecraft.util.Identifier;
 
 TO DO LIST: 
 
+- Recipes for All Tools + mangetoutium blocks n stuff
+- Loot tables for ore, block. 
 - Farmable Mangetout
-- Food Functionality to Mangetout. 
-- Mangetout weapons
-- Mangetoutium Ore.
-- Magic Mangetout
-- Mangetouter - drops mangetout (creeper model)
+- Infused Mangetout Block -- Sea Lanterns / glowstone surrounded by mangetout -> luminous
+- Mangetouter - drops mangetout  / rarely a mangetoutium bar. (creeper model)
+- ADD ALL ITEMS TO MANGETOUT MANIA CREATIVE TAB
 
 */
 
@@ -60,7 +59,9 @@ public class MangetoutMania implements ModInitializer {
         ModBlocks.registerBlocks();
         
         modifyLootTables();
-        
+
+        //FuelRegistry.INSTANCE.add(item, tickTime) --> for adding fuel sources. 
+
     }
 
     private void modifyLootTables() {

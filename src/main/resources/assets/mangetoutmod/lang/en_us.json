@@ -1,7 +1,19 @@
 {
-    "item.mangetoutmod.mangetout": "Mange tout",
+    "item.mangetoutmod.mangetout": "Mangetout",
     "block.mangetoutmod.condensed_mangetout": "Condensed Mangetout Block",
     "itemGroup.mangetoutmod.complexgroup": "Mangetout Mania",
-    "item.mangetoutmod.crisp_mangetout": "Crisp Mangetout"
+    "item.mangetoutmod.crisp_mangetout": "Crisp Mangetout",
+    "block.mangetoutmod.mangetoutium_ore": "Mangetoutium Ore",
+    "item.mangetoutmod.raw_mangetoutium": "Raw Mangetoutium",
+    "block.mangetoutmod.mangetoutium_block": "Mangetoutium Block",
+    "item.mangetoutmod.mangetoutium_ingot": "Mangetoutium Ingot",
+    "item.mangetoutmod.mangetoutium_sword": "Mangetoutium Sword",
+    "item.mangetoutmod.mangetoutium_pickaxe": "Mangetoutium Pickaxe",
+    "item.mangetoutmod.mangetoutium_shovel": "Mangetoutium Shovel",
+    "item.mangetoutmod.mangetoutium_axe": "Mangetoutium Axe",
+    "item.mangetoutmod.mangetoutium_hoe": "Mangetoutium Hoe"
+
+
+
 
 }

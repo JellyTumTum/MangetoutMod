@@ -22,7 +22,23 @@ public class ModBlocks {
     .strength(1.5f, 2f)
     .sounds(BlockSoundGroup.WART_BLOCK));
 
+    public static final Block MANGETOUTIUM_ORE = new Block(FabricBlockSettings
+    .of(Material.STONE, MaterialColor.STONE)
+    .breakByTool(FabricToolTags.PICKAXES, 2)
+    .breakByHand(false)
+    .strength(5f, 15f)
+    .sounds(BlockSoundGroup.STONE));
+
+    public static final Block MANGETOUTIUM_BLOCK = new Block(FabricBlockSettings
+    .of(Material.METAL, MaterialColor.GREEN)
+    .breakByTool(FabricToolTags.PICKAXES, 2)
+    .breakByHand(false)
+    .strength(5f, 15f)
+    .sounds(BlockSoundGroup.METAL));
+
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(MangetoutMania.MOD_ID, "condensed_mangetout"), CONDENSED_MANGETOUT);
+        Registry.register(Registry.BLOCK, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_ore"), MANGETOUTIUM_ORE);
+        Registry.register(Registry.BLOCK, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_block"), MANGETOUTIUM_BLOCK);
     }
 }
