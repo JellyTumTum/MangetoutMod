@@ -33,10 +33,9 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 TO DO LIST: 
 
-- Recipes for All Tools + mangetoutium blocks n stuff
-- Loot tables for ore, block. 
-- Farmable Mangetout
 - Infused Mangetout Block -- Sea Lanterns / glowstone surrounded by mangetout -> luminous
+- Farmable Mangetout
+- Change Condensed Mangetout block so it has top and side texture, see hay_block.json in the models section of minecrafts code to see how. (req the top texture to be made. )
 - Mangetouter - drops mangetout  / rarely a mangetoutium bar. (creeper model)
 - ADD ALL ITEMS TO MANGETOUT MANIA CREATIVE TAB
 

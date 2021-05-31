@@ -1,0 +1,6 @@
+{
+  "parent": "mangetoutmod:block/tinted_cross",
+  "textures": {
+    "cross": "mangetoutmod:blocks/mangetout_stalk"
+  }
+}

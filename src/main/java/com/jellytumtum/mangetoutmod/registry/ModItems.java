@@ -35,6 +35,7 @@ public class ModItems {
     public static final BlockItem CONDENSED_MANGETOUT = new BlockItem(ModBlocks.CONDENSED_MANGETOUT, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
     public static final BlockItem MANGETOUTIUM_ORE = new BlockItem(ModBlocks.MANGETOUTIUM_ORE, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
     public static final BlockItem MANGETOUTIUM_BLOCK = new BlockItem(ModBlocks.MANGETOUTIUM_BLOCK, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
+    public static final BlockItem MANGETOUT_STALK = new BlockItem(ModBlocks.MANGETOUT_STALK, new Item.Settings().group(ItemGroup.FOOD));
 
 
 
@@ -51,6 +52,7 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_shovel"), MANGETOUTIUM_SHOVEL);
         Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_axe"), MANGETOUTIUM_AXE);
         Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_hoe"), MANGETOUTIUM_HOE);
+        Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetout_stalk"), MANGETOUT_STALK);
         
 
 

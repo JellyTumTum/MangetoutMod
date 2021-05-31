@@ -4,6 +4,7 @@ import com.jellytumtum.mangetoutmod.MangetoutMania;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.fabricmc.fabric.api.tool.attribute.v1.FabricToolTags;
 import net.minecraft.block.Block;
+import net.minecraft.block.Blocks;
 import net.minecraft.block.Material;
 import net.minecraft.block.MaterialColor;
 import net.minecraft.sound.BlockSoundGroup;
@@ -36,9 +37,13 @@ public class ModBlocks {
     .strength(5f, 15f)
     .sounds(BlockSoundGroup.METAL));
 
+    public static final Block MANGETOUT_STALK = new MangetoutStalk(FabricBlockSettings.copy(Blocks.SUGAR_CANE));
+
     public static void registerBlocks() {
         Registry.register(Registry.BLOCK, new Identifier(MangetoutMania.MOD_ID, "condensed_mangetout"), CONDENSED_MANGETOUT);
         Registry.register(Registry.BLOCK, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_ore"), MANGETOUTIUM_ORE);
         Registry.register(Registry.BLOCK, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_block"), MANGETOUTIUM_BLOCK);
+        Registry.register(Registry.BLOCK, new Identifier(MangetoutMania.MOD_ID, "mangetout_stalk"), MANGETOUT_STALK);
+    
     }
 }
