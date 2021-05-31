@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "mm",
+        "/ ",
+        "/ "
+    ],
+    "key": {
+        "m": {
+            "item": "mangetoutmod:mangetoutium_ingot"
+        },
+        "/": {
+            "item": "minecraft:stick"
+        }
+    },
+    "result": {
+        "item": "mangetoutmod:mangetoutium_hoe",
+        "count": 1
+    },
+    "group": "mangetoutmod"
+}

@@ -1,0 +1,10 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "mangetoutmod:raw_mangetoutium"
+    },
+    "result": "mangetoutmod:mangetoutium_ingot",
+    "experience": 1,
+    "cookingtime": 100,
+    "group": "mangetoutmod"
+}

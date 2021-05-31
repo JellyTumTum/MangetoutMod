@@ -1,0 +1,13 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "mangetoutmod:mangetoutium_block"
+        }
+    ],
+    "result": {
+        "item": "mangetoutmod:mangetoutium_ingot",
+        "count": 9
+    },
+    "group": "mangetoutmod"
+}
