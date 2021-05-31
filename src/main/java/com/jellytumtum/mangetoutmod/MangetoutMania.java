@@ -4,6 +4,8 @@ import com.jellytumtum.mangetoutmod.registry.ModBlocks;
 import com.jellytumtum.mangetoutmod.registry.ModItems;
 
 import net.fabricmc.api.ModInitializer;
+import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
+import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
 import net.fabricmc.fabric.api.client.itemgroup.FabricItemGroupBuilder;
 import net.fabricmc.fabric.api.loot.v1.FabricLootPoolBuilder;
 import net.fabricmc.fabric.api.loot.v1.event.LootTableLoadingCallback;
@@ -14,6 +16,15 @@ import net.minecraft.loot.UniformLootTableRange;
 import net.minecraft.loot.entry.ItemEntry;
 import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.util.Identifier;
+import net.minecraft.util.registry.BuiltinRegistries;
+import net.minecraft.util.registry.Registry;
+import net.minecraft.util.registry.RegistryKey;
+import net.minecraft.world.gen.GenerationStep;
+import net.minecraft.world.gen.decorator.Decorator;
+import net.minecraft.world.gen.decorator.RangeDecoratorConfig;
+import net.minecraft.world.gen.feature.ConfiguredFeature;
+import net.minecraft.world.gen.feature.Feature;
+import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 /* IMPORTANT DETAILS :
 
@@ -53,12 +64,23 @@ public class MangetoutMania implements ModInitializer {
         // injecting additional entries into loot tables. 
         private static final Identifier ZOMBIE_LOOT_TABLE_ID = new Identifier("minecraft", "entities/zombie");
 
+        private static ConfiguredFeature<?, ?> MANGETOUTIUM_ORE_OVERWORLD = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, ModBlocks.MANGETOUTIUM_ORE.getDefaultState(), 25)) // last int value = max number in 1 vein.
+        .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(0, 0, 240))).spreadHorizontally().repeat(20);
+        // RangeDecoratorConfig(0, minYValue, maxYValue)
+        // .repeat(veinsPerChunk)
+
+
     @Override
     public void onInitialize() {
         ModItems.registerItems();
         ModBlocks.registerBlocks();
         
         modifyLootTables();
+
+        // ORE GENERATION
+        RegistryKey<ConfiguredFeature<?,?>> mangetoutiumOreOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_WORLDGEN, new Identifier("mangetoutmod","mangetoutium_ore"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, mangetoutiumOreOverworld.getValue(), MANGETOUTIUM_ORE_OVERWORLD);
+        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, mangetoutiumOreOverworld); // line through cause its scary and people dont you messing innit.
 
         //FuelRegistry.INSTANCE.add(item, tickTime) --> for adding fuel sources. 
 
