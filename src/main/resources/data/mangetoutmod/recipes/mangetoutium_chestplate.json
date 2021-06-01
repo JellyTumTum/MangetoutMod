@@ -1,0 +1,21 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "mMm",
+        "mmm",
+        "mmm"
+    ],
+    "key": {
+        "m": {
+            "item": "mangetoutmod:mangetoutium_ingot"
+        },
+        "M": {
+            "item": "mangetoutmod:mangetout"
+        }
+    },
+    "result": {
+        "item": "mangetoutmod:mangetoutium_chestplate",
+        "count": 1
+    },
+    "group": "mangetoutmod"
+}

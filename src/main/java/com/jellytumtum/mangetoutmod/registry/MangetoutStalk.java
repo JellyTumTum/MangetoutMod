@@ -7,12 +7,10 @@ import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.ShapeContext;
-import net.minecraft.fluid.FluidState;
 import net.minecraft.server.world.ServerWorld;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.IntProperty;
 import net.minecraft.state.property.Properties;
-import net.minecraft.tag.FluidTags;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.shape.VoxelShape;
@@ -75,16 +73,10 @@ public class MangetoutStalk extends Block {
          return true;
       } else {
          if (blockState.isOf(Blocks.GRASS_BLOCK) || blockState.isOf(Blocks.DIRT) || blockState.isOf(Blocks.COARSE_DIRT) || blockState.isOf(Blocks.PODZOL) || blockState.isOf(Blocks.SAND) || blockState.isOf(Blocks.RED_SAND)) {
-            BlockPos blockPos = pos.down();
             Iterator var6 = Direction.Type.HORIZONTAL.iterator();
 
-            while(var6.hasNext()) {
-               Direction direction = (Direction)var6.next();
-               BlockState blockState2 = world.getBlockState(blockPos.offset(direction));
-               FluidState fluidState = world.getFluidState(blockPos.offset(direction));
-               if (fluidState.isIn(FluidTags.WATER) || blockState2.isOf(Blocks.FROSTED_ICE)) {
-                  return true;
-               }
+            while(var6.hasNext()) { // Says all blocks are valid. 
+               return true;
             }
          }
 

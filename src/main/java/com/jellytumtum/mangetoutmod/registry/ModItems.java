@@ -1,7 +1,11 @@
 package com.jellytumtum.mangetoutmod.registry;
 
 import com.jellytumtum.mangetoutmod.MangetoutMania;
+// import com.jellytumtum.mangetoutmod.registry.CustomArmorMaterial;
 
+import net.minecraft.entity.EquipmentSlot;
+import net.minecraft.item.ArmorItem;
+import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
@@ -30,6 +34,13 @@ public class ModItems {
     public static final Item MANGETOUTIUM_AXE = new AxeInstance(new ToolMaterialMangetoutium());
     public static final Item MANGETOUTIUM_HOE = new HoeInstance(new ToolMaterialMangetoutium());
 
+    public static final ArmorMaterial MANGETOUT_ARMOUR_MATERIAL = new CustomArmorMaterial();
+    // If you made a new material, this is where you would note it.
+    public static final Item MANGETOUTIUM_HELMET = new ArmorItem(MANGETOUT_ARMOUR_MATERIAL, EquipmentSlot.HEAD, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item MANGETOUTIUM_CHESTPLATE = new ArmorItem(MANGETOUT_ARMOUR_MATERIAL, EquipmentSlot.CHEST, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item MANGETOUTIUM_LEGGINGS = new ArmorItem(MANGETOUT_ARMOUR_MATERIAL, EquipmentSlot.LEGS, new Item.Settings().group(ItemGroup.COMBAT));
+    public static final Item MANGETOUTIUM_BOOTS = new ArmorItem(MANGETOUT_ARMOUR_MATERIAL, EquipmentSlot.FEET, new Item.Settings().group(ItemGroup.COMBAT));
+
 
     // Block Items
     public static final BlockItem CONDENSED_MANGETOUT = new BlockItem(ModBlocks.CONDENSED_MANGETOUT, new Item.Settings().group(ItemGroup.BUILDING_BLOCKS));
@@ -53,6 +64,10 @@ public class ModItems {
         Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_axe"), MANGETOUTIUM_AXE);
         Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_hoe"), MANGETOUTIUM_HOE);
         Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetout_stalk"), MANGETOUT_STALK);
+        Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_helmet"), MANGETOUTIUM_HELMET);
+        Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_chestplate"), MANGETOUTIUM_CHESTPLATE);
+        Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_leggings"), MANGETOUTIUM_LEGGINGS);
+        Registry.register(Registry.ITEM, new Identifier(MangetoutMania.MOD_ID, "mangetoutium_boots"), MANGETOUTIUM_BOOTS);
         
 
 

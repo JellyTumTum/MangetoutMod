@@ -35,7 +35,6 @@ TO DO LIST:
 
 - Villager functionality to make it obtainable. (available in villager trade and maybe some sort of random chest)
 - Infused Mangetout Block -- Sea Lanterns / glowstone surrounded by mangetout -> luminous
-- Mangetout Armour? 
 - Change Condensed Mangetout block so it has top and side texture, see hay_block.json in the models section of minecrafts code to see how. (req the top texture to be made. )
 - Mangetouter - drops mangetout  / rarely a mangetoutium bar. (creeper model)
 - Look into generated structures. Mangetout Temple??  
@@ -57,7 +56,19 @@ public class MangetoutMania implements ModInitializer {
         .icon(() -> new ItemStack(ModItems.MANGETOUT))
         .appendItems(stacks -> {
             stacks.add(new ItemStack(ModItems.MANGETOUT));
+            stacks.add(new ItemStack(ModItems.MANGETOUT_STALK));
+            stacks.add(new ItemStack(ModItems.CRISP_MANGETOUT));
             stacks.add(new ItemStack(ModItems.CONDENSED_MANGETOUT));
+            stacks.add(new ItemStack(ModItems.MANGETOUTIUM_SWORD));
+            stacks.add(new ItemStack(ModItems.MANGETOUTIUM_PICKAXE));
+            stacks.add(new ItemStack(ModItems.MANGETOUTIUM_SHOVEL));
+            stacks.add(new ItemStack(ModItems.MANGETOUTIUM_AXE));
+            stacks.add(new ItemStack(ModItems.MANGETOUTIUM_HOE));
+            stacks.add(new ItemStack(ModItems.MANGETOUTIUM_INGOT));
+            stacks.add(new ItemStack(ModItems.MANGETOUTIUM_ORE));
+            stacks.add(new ItemStack(ModItems.MANGETOUTIUM_BLOCK));
+            stacks.add(new ItemStack(ModItems.RAW_MANGETOUTIUM));
+            
         })
         .build();
 
