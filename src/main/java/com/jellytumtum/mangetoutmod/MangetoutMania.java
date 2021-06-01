@@ -33,10 +33,12 @@ import net.minecraft.world.gen.feature.OreFeatureConfig;
 
 TO DO LIST: 
 
+- Villager functionality to make it obtainable. (available in villager trade and maybe some sort of random chest)
 - Infused Mangetout Block -- Sea Lanterns / glowstone surrounded by mangetout -> luminous
-- Farmable Mangetout
+- Mangetout Armour? 
 - Change Condensed Mangetout block so it has top and side texture, see hay_block.json in the models section of minecrafts code to see how. (req the top texture to be made. )
 - Mangetouter - drops mangetout  / rarely a mangetoutium bar. (creeper model)
+- Look into generated structures. Mangetout Temple??  
 - ADD ALL ITEMS TO MANGETOUT MANIA CREATIVE TAB
 
 */

@@ -20,6 +20,8 @@ import net.minecraft.world.BlockView;
 import net.minecraft.world.WorldAccess;
 import net.minecraft.world.WorldView;
 
+
+// literally cut paste of SugarCaneBlock code. --> needs to be adjusted to not force placement on water.
 public class MangetoutStalk extends Block {
    public static final IntProperty AGE;
    protected static final VoxelShape SHAPE;
